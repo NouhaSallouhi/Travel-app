@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$fst-color: #bfc0c0;
+.dataSection
+{
+    border: $fst-color;
+    padding: 50px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    padding: 6px 10px;
+    width: calc(100% - 20px);
+    margin: 12px 0;
+    border: none;
+    border-bottom: 1px solid #2d3142;
+    font-size: 50px; 
+}
+
+input::placeholder{
+	font-size: 20px;
+    text-transform: uppercase;
+}
+
+button{
+    position: relative;
+    transform: translate(50%,50%);
+    background-color: #2d3142; 
+    color: #ffffff;
+    border: none;
+    font-size: 45px;
+    display: block;
+     margin: 65px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 40%;
+    transition: all .4s;
+}
+button:hover{
+	background-color: #0e6d62;
+    color: #ffffff;
+}
+
+@media only screen and (min-width : 768px)   {
+    label{
+        font-size: 40px;
+    }
+    input{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    label{
+        font-size: 20px;
+    }
+    input{
+        font-size: 18px;
+    }
+}

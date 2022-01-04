@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel app</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+ <body>
+  <div id = "app">
+    <header>
+      <h1>Travel Planner</h1>
+    </header>
+    <main>
+      <section class="dataSection">
+        <form >     
+          <div class ="holderDestination">
+            <label for="destination">Enter your destination here:</label>
+            <input type="text" id="destination" required>
+          </div>
+          <div class ="holderdeparture">
+            <label for="departure">Enter your departure date:</label>
+            <input type="date" name="departure-d" id="departure-d" placeholder="YYYY-MM-DD" required>
+          </div>
+          <div class ="holderArrival">
+            <label for="arrival">Enter your arrival date:</label>
+            <input type="date" name="arrival-d" id="arrival-d" placeholder="YYYY-MM-DD" required>
+          </div>
+          <button id="generate" type = "submit" > Generate </button>
+        </form>
+      </section>
+      <section id="displayResult">
+        <!--h2 class="title">Result</h2-->
+      </section>
+    </main>   
+    <!-- <div id="displayResult">
+      <h1 class="title">Result</h1>
+    </div> -->
+    <footer id="footer">
+      <p class="footerParagraph">Built for Udacity Frontend Nanodegree by Nouha Sallouhi &copy;Juin 2021 </p>
+    </footer>
+</div>
+<script>
+  // Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+      });
+  }
+ </script>
+
+</body>
+</html>

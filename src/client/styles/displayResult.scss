@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+#displayResult{
+    border: black;
+    margin: 50px;
+}
+
+#entry{
+   margin: 50px;
+}
+
+h2{
+	color: #2d3142;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    border-bottom:solid;
+}
+h3{
+    
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+img{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.subDiv{
+    border: #2d3142;
+    //grid-area:3/1/4/4;
+    padding-left: 10px;
+}
+
+
+span{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width : 767px) {
+    h2{
+        font-size: 100px;
+    }
+
+    h3{
+        font-size: 70px;
+    }
+
+    p{
+        font-size: 40px; 
+    }
+    .c1{
+        font-size: 70px;  
+    }
+    
+//     .all{
+//         display: grid;
+//         grid-template-columns: repeat(6, 1fr);
+//         grid-template-rows: auto auto ;
+//         grid-gap: 5px;
+//     }
+//     img{
+//         grid-area:1/1/2/7;
+//      }
+//      .subDiv{
+//          grid-area:2/1/5/7;
+//      }   
+ }
+
+
+.all{
+    
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto ;
+    grid-gap: 5px;
+}
+
+/* Tablets */
+@media only screen and (min-width : 768px)   {
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 15px; 
+    }
+    .c1{
+        font-size: 40px;  
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 55vw;
+        height: 400px;
+    
+    }
+    #entry-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
